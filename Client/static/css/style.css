@@ -1,0 +1,19 @@
+html{
+    position: relative;
+  min-height: 100%;
+}
+body{
+    width: 100%;
+    margin:0;
+    padding:0;
+    background: #fff;
+    font-family: 'Work Sans', sans-serif;
+    position: relative;
+}
+nav{
+    color:#fff;
+    background:#8000ff;
+}
+.white{
+    color:#fff;
+}

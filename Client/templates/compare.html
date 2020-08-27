@@ -1,0 +1,55 @@
+{% extends 'base.html' %}
+{% block body %}
+
+
+<div class="container">
+    <div class="row">
+        <div class="col-lg-6">
+            <img class="coin_logo" src="{{ one.logo }}"/>
+            <div class="details">
+                <h1>{{ one.name }} ({{ one.symbol }})</h1>
+                <h3>Current Price: ${{ "%.2f"|format(one.price) }}</h3>
+            </div>
+            <h3>Price change in the past 31 days</h3>
+            <img class="img_chart" src="{{ one.chart }}"/>
+        </div>
+        <div class="col-lg-6">
+                <img class="coin_logo" src="{{ two.logo }}"/>
+                <div class="details">
+                    <h1>{{ two.name }} ({{ two.symbol }})</h1>
+                    <h3>Current Price: ${{ "%.2f"|format(two.price) }}</h3>
+                </div>
+                <h3>Price change in the past 31 days</h3>
+            <img class="img_chart" src="{{ two.chart }}"/>
+        </div>
+    </div>
+</div>
+
+<style>
+    .row{
+        width: 100%;
+        text-align: center;
+        margin: 50px 0;
+    }
+    .col-lg-6{
+        text-align: center;
+        padding: 5%;
+    }
+    .coin_logo{
+        height: 200px;
+        /* width: 400px; */
+        object-fit: cover;
+        margin: auto;
+        /* box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19); */
+    }
+    .details{
+        margin: 50px 0;
+    }
+    .img_chart{
+        width: 90%;
+        margin: auto;
+        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+        margin:20px 0;
+    }
+</style>
+      {% endblock%}   

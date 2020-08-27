@@ -1,0 +1,80 @@
+{% extends 'base.html' %}
+{% block body %}
+<div class="centered">
+  <h1 class="purple">Compare Cryptos</h1>
+<form action="/" method="post">
+  <select name="coin_one" >
+    <option value="" selected disabled hidden>Choose</option>
+    <option value="bitcoin">Bitcoin</option>
+    <option value="ethereum">Ethererum</option>
+    <option value="ripple">Ripple</option>
+    <option value="bitcoincash">Bitcoin Cash</option>
+    <option value="litecoin">Litecoin</option>
+    <option value="eos">EOS</option>
+    <option value="binancecoin">Binance Coin</option>
+    <option value="stellar">Stellar</option>
+    <option value="cardano">Cardano</option>
+    <option value="tron">Tron</option>
+    <option value="monero">Monero</option>
+    <option value="tezos">Tezos</option>
+    <option value="neo">Neo</option>
+    <option value="cosmos">Cosmos</option>
+    <option value="dash">Dash</option>
+    <option value="ethereumclassic">Ethereum Classic</option>
+  </select>
+  <select name="coin_two" >
+    <option value="" selected disabled hidden>Choose</option>
+    <option value="bitcoin">Bitcoin</option>
+    <option value="ethereum">Ethererum</option>
+    <option value="ripple">Ripple</option>
+    <option value="bitcoincash">Bitcoin Cash</option>
+    <option value="litecoin">Litecoin</option>
+    <option value="eos">EOS</option>
+    <option value="binancecoin">Binance Coin</option>
+    <option value="stellar">Stellar</option>
+    <option value="cardano">Cardano</option>
+    <option value="tron">Tron</option>
+    <option value="monero">Monero</option>
+    <option value="tezos">Tezos</option>
+    <option value="neo">Neo</option>
+    <option value="cosmos">Cosmos</option>
+    <option value="dash">Dash</option>
+    <option value="ethereumclassic">Ethereum Classic</option>
+  </select>
+  <input type="submit">
+</form>
+</div>
+<style>
+  body{
+    height:100%;
+    min-height: 1000px;
+  }
+  .centered {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+.purple{
+  color:#8000ff;
+}
+form{
+  margin: 50px;
+}
+select{
+  background: #fff;
+  color:#8000ff;
+  height:50px;
+  border:1px solid #8000ff;
+  border-radius: 0;
+}
+input[type=submit]{
+  color:#fff;
+  background-color:#8000ff;
+  border: 0;
+height:50px;
+}
+</style>
+
+{% endblock%}   
